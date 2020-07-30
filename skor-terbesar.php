@@ -6,11 +6,11 @@ function skor_terbesar($arr){
   $nilai2 = 0;
   $nilai3 = 0;
   foreach ($arr as $key => $value) {
-    if ($value['nilai']>$nilai and $value['kelas'] == 'Laravel'){
+    if ($value['nilai']>$nilai && $value['kelas'] == 'Laravel'){
       $nilai = $value['nilai'];
-    }elseif ($value['nilai']>$nilai2 and $value['kelas'] == 'React Native') {
+    }elseif ($value['nilai']>$nilai2 && $value['kelas'] == 'React Native') {
       $nilai2 = $value['nilai'];
-    }elseif ($value['nilai']>$nilai3 and $value['kelas'] == 'React JS') {
+    }elseif ($value['nilai']>$nilai3 && $value['kelas'] == 'React JS') {
       $nilai3 = $value['nilai'];
     }else{
       continue;
@@ -53,8 +53,9 @@ $skor = [
     "nilai" => 77
   ],
 ];
-
+echo "<pre>";
 print_r(skor_terbesar($skor));
+echo "</pre>";
 /* OUTPUT
   Array (
     [Laravel] => Array
